@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CrashBeacon support and troubleshooting."><title>Support — CrashBeacon</title>
+  <link rel="icon" href="assets/crashx-icon.png"><link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav wrap"><a class="brand" href="index.html"><img src="assets/crashx-icon.png" alt=""><span>CrashBeacon</span></a><div class="nav-links"><a href="index.html" data-en="Home" data-zh="首页"></a><a href="privacy.html" data-en="Privacy" data-zh="隐私"></a><button class="language-button" data-lang-button type="button">中文</button></div></nav></header>
+  <main class="page wrap">
+    <header class="page-header"><div class="eyebrow">CrashBeacon 1.0 · macOS 26.5+</div><h1 class="page-title" data-en="Support" data-zh="技术支持"></h1><p class="page-lead" data-en="Setup, report locations, and answers to common symbolication problems." data-zh="查看使用流程、报告位置，以及常见符号化问题的解决方法。"></p></header>
+    <section class="prose">
+      <h2 data-en="Quick start" data-zh="快速开始"></h2>
+      <ol><li data-en="Import a .crash or .ips diagnostic report." data-zh="导入 .crash 或 .ips 诊断报告。"></li><li data-en="Add the .app.dSYM produced by the exact same build." data-zh="添加由同一次构建产生的 .app.dSYM。"></li><li data-en="Add the folder that contains your source files." data-zh="添加包含源码文件的工程目录。"></li><li data-en="Open Full Stack to review every symbolicated frame." data-zh="打开“完整堆栈”，检查所有已符号化栈帧。"></li></ol>
+
+      <h2 data-en="Common questions" data-zh="常见问题"></h2>
+      <div class="support-grid">
+        <article class="card"><h3 data-en="No matching dSYM" data-zh="没有匹配的 dSYM"></h3><p data-en="A rebuild creates a different UUID. Use the dSYM archived with the build that produced the report." data-zh="重新构建会产生不同 UUID。请使用与崩溃报告对应的那次构建归档中的 dSYM。"></p></article>
+        <article class="card"><h3 data-en="Source file not found" data-zh="找不到源码文件"></h3><p data-en="Add the project directory that contains the file. CrashBeacon supports moved projects by matching the longest path suffix." data-zh="请添加包含该文件的工程目录。工程移动后，CrashBeacon 会按最长路径后缀进行匹配。"></p></article>
+        <article class="card"><h3 data-en="Permission to open source" data-zh="没有权限打开源码"></h3><p data-en="Add the source folder again so macOS can renew read-only sandbox access, then click the source line." data-zh="请重新添加源码目录，让 macOS 更新只读沙盒权限，然后再次点击源码行。"></p></article>
+        <article class="card"><h3 data-en="Report has JSON on one line" data-zh="报告 JSON 只有一行"></h3><p data-en="Use Raw Report. CrashBeacon preserves all content and formats embedded JSON for readable line breaks." data-zh="请打开“原始报告”。CrashBeacon 会保留全部内容，并将嵌入 JSON 格式化换行。"></p></article>
+      </div>
+
+      <h2 data-en="Where to find reports" data-zh="报告在哪里找"></h2>
+      <ul><li><strong>iPhone / iPad:</strong> <span data-en="Settings → Privacy & Security → Analytics & Improvements → Analytics Data" data-zh="设置 → 隐私与安全性 → 分析与改进 → 分析数据"></span></li><li><strong>Mac:</strong> <span data-en="Console → Crash Reports or Diagnostic Reports" data-zh="控制台 → 崩溃报告或诊断报告"></span></li><li><strong>Xcode:</strong> <span data-en="Window → Devices and Simulators → Open Device Logs" data-zh="窗口 → 设备与模拟器 → 打开设备日志"></span></li></ul>
+
+      <div class="contact-box">
+        <h2 data-en="Contact support" data-zh="联系支持"></h2>
+        <p data-en="Include the CrashBeacon version, report type, and the exact error message. Do not attach proprietary source code or crash reports to a public issue." data-zh="请提供 CrashBeacon 版本、报告类型和完整错误信息。请勿在公开 Issue 中附加专有源码或崩溃报告。"></p>
+        <a class="button primary" href="#contact-setup" data-support-link data-en="Open a support request" data-zh="提交支持请求"></a>
+        <span class="contact-value" data-contact-value id="contact-setup" data-en="The support link activates automatically after publishing on GitHub Pages." data-zh="发布到 GitHub Pages 后，支持链接会自动启用。"></span>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-row wrap"><span>© 2026 CrashBeacon</span><a href="index.html" data-en="Home" data-zh="首页"></a><a href="privacy.html" data-en="Privacy" data-zh="隐私"></a></div></footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>

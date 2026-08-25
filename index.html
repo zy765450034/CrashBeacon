@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CrashBeacon is a private, local macOS crash report analyzer with dSYM symbolication and source location.">
+  <title>CrashBeacon — Crash reports to source lines</title>
+  <link rel="icon" href="assets/crashx-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img src="assets/crashx-icon.png" alt=""><span>CrashBeacon</span></a>
+      <div class="nav-links">
+        <a href="#features" data-en="Features" data-zh="功能"></a>
+        <a href="support.html" data-en="Support" data-zh="支持"></a>
+        <a href="privacy.html" data-en="Privacy" data-zh="隐私"></a>
+        <button class="language-button" data-lang-button type="button">中文</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div>
+        <div class="eyebrow" data-en="Native macOS crash diagnostics" data-zh="原生 macOS 崩溃诊断"></div>
+        <h1 data-en="From crash address to source line." data-zh="从崩溃地址，直达源码行。"></h1>
+        <p class="hero-copy" data-en="CrashBeacon turns Apple diagnostic reports into readable stacks, matches the correct dSYM, and locates the exact source file — entirely on your Mac." data-zh="CrashBeacon 将 Apple 诊断报告转换为清晰堆栈，匹配正确的 dSYM，并定位到准确源码文件——全部在你的 Mac 本地完成。"></p>
+        <div class="actions">
+          <a class="button primary" href="support.html" data-en="View support guide" data-zh="查看支持指南"></a>
+          <a class="button" href="privacy.html" data-en="Read privacy policy" data-zh="阅读隐私政策"></a>
+        </div>
+      </div>
+      <img class="hero-icon" src="assets/crashx-icon.png" alt="CrashBeacon app icon">
+    </section>
+
+    <section class="section wrap" id="features">
+      <div class="section-title">
+        <div class="eyebrow" data-en="Built for Apple diagnostics" data-zh="专为 Apple 诊断报告打造"></div>
+        <h2 data-en="The evidence you need, without leaving your Mac." data-zh="需要的诊断证据，不离开你的 Mac。"></h2>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="card-icon">01</div><h3 data-en="Complete report parsing" data-zh="完整报告解析"></h3><p data-en="Read .ips, .crash, Jetsam, Watchdog, Hang, MetricKit, and resource reports while preserving the full original text." data-zh="读取 .ips、.crash、Jetsam、Watchdog、Hang、MetricKit 和资源报告，并保留完整原文。"></p></article>
+        <article class="card"><div class="card-icon">02</div><h3 data-en="Sandbox-safe symbolication" data-zh="沙盒内符号化"></h3><p data-en="Match dSYM files by UUID and resolve native Objective-C, Swift, and C++ symbols without external command-line tools." data-zh="通过 UUID 匹配 dSYM，在不调用外部命令行工具的情况下解析 Objective-C、Swift 和 C++ 符号。"></p></article>
+        <article class="card"><div class="card-icon">03</div><h3 data-en="Source line location" data-zh="源码行定位"></h3><p data-en="Use DWARF line data to connect a stack frame to its local source file and line, even after the project has moved." data-zh="使用 DWARF 行号数据，将栈帧连接到本地源码文件与行号，工程移动后仍可匹配。"></p></article>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="section-title"><div class="eyebrow" data-en="Simple workflow" data-zh="简单流程"></div><h2 data-en="Four steps to an actionable stack." data-zh="四步获得可行动的堆栈。"></h2></div>
+      <div class="workflow">
+        <article class="step"><h3 data-en="Import report" data-zh="导入报告"></h3><p data-en="Drop in an Apple crash or diagnostic report." data-zh="拖入 Apple 崩溃或诊断报告。"></p></article>
+        <article class="step"><h3 data-en="Add dSYM" data-zh="添加 dSYM"></h3><p data-en="Choose the dSYM from the exact same build." data-zh="选择同一次构建产生的 dSYM。"></p></article>
+        <article class="step"><h3 data-en="Add source" data-zh="添加源码"></h3><p data-en="Grant read-only access to the project folder." data-zh="为工程目录授予只读访问。"></p></article>
+        <article class="step"><h3 data-en="Inspect every frame" data-zh="检查全部栈帧"></h3><p data-en="Review functions, offsets, files, and line numbers." data-zh="查看函数、偏移、文件和行号。"></p></article>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="trust">
+        <article class="trust-panel"><h3 data-en="Local by design" data-zh="为本地处理而设计"></h3><p data-en="Crash reports, dSYMs, and source files are processed on-device. CrashBeacon does not upload diagnostic data." data-zh="崩溃报告、dSYM 和源码均在设备本地处理，CrashBeacon 不上传诊断数据。"></p></article>
+        <article class="trust-panel coral"><h3 data-en="Read-only access" data-zh="只读访问"></h3><p data-en="The App Sandbox limits CrashBeacon to files and folders you explicitly choose. Your source code is never modified." data-zh="App Sandbox 将 CrashBeacon 限制在你明确选择的文件和目录中，源码绝不会被修改。"></p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-row wrap"><span>© 2026 CrashBeacon</span><a href="support.html" data-en="Support" data-zh="支持"></a><a href="privacy.html" data-en="Privacy" data-zh="隐私"></a><a href="#" data-repository-link>GitHub</a></div></footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>
